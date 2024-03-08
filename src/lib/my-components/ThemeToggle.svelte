@@ -3,7 +3,6 @@
 	import { toggleMode } from 'mode-watcher';
 	import Moon from 'svelte-radix/Moon.svelte';
 	import Sun from 'svelte-radix/Sun.svelte';
-	import '../app.pcss';
 </script>
 
 <Button on:click={toggleMode} variant="outline" size="icon">

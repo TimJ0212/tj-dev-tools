@@ -1,4 +1,10 @@
 <script>
+	import { messaging } from '$lib/firebase/firebase.app';
+	import { onMessage } from 'firebase/messaging';
+
+	onMessage(messaging, (payload) => {
+		console.log('Message recieved: ', payload);
+	});
 </script>
 
 <section

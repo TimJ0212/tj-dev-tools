@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { Separator } from '$lib/components/ui/separator';
+	import ThemeToggle from '$lib/my-components/ThemeToggle.svelte';
 	import { ModeWatcher } from 'mode-watcher';
 	import '../app.pcss';
-	import ThemeToggle from './ThemeToggle.svelte';
 </script>
 
 <div class="flex h-screen flex-col">
-	<header class="flex justify-between p-5">
+	<header class="flex justify-between p-5 print:hidden">
 		<div><a href="/">Dev Tools</a></div>
 		<div class="flex">
 			<Button href="/apps/sprintreview" class="mx-2">Sprint-Review</Button>
@@ -20,5 +20,5 @@
 		<ModeWatcher />
 	</slot>
 
-	<footer class="mt-auto">Build by TJ</footer>
+	<footer class="mt-auto print:hidden">Build by T</footer>
 </div>
